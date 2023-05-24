@@ -1,0 +1,272 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #2b2b2b
+}
+
+nav
+{
+    width: 100%;
+    height: 80px;
+    background-color: #2b2b2b;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+header
+{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../assets/bread.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+footer
+{
+    width: 100%;
+    height: 80px;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+footer p
+{
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    color: grey;
+    padding-top: 10px;
+    margin-left: 25%;
+}
+
+p
+{
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+
+h3
+{   
+    margin-left: 40%;
+    width: 300px;
+    padding-top: 50px;
+    color: #dfc56e;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #dfc56e;
+    font-family: 'Caveat', cursive;
+}
+
+h4
+{
+    font-family: 'Caveat', cursive;
+}
+
+h2
+{
+    margin-left: 42%;
+    width: 200px;
+    padding-top: 50px;
+    color: #dfc56e;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #dfc56e;
+    font-family: 'Caveat', cursive;
+}
+
+form h4
+{
+    width: 170px;;
+    color: #dfc56e;
+    font-weight: bold;
+    border-bottom: 2px solid #dfc56e;
+    font-family: 'Caveat', cursive;
+}
+
+form
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color:  grey;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+select, button
+{
+    width: 90% !important;
+}
+
+.input-el
+{
+    width: 90%;
+    height: 35%;
+    margin-top: 10px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.logo img
+{
+    float: left;
+    padding-right: 5px;
+}
+
+.name
+{
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    color: white;
+    padding-top: 10px;
+}
+
+.nav-con
+{
+    width: 720px;
+    height: 50px;
+    float: left;
+    margin-left: 10%;
+    padding-top: 5px;
+}
+
+.nav-con ul
+{
+    list-style: none;
+}
+
+.nav-con li
+{
+    float: left;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+.nav-con li:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active
+{ 
+    color: #dfc56e !important;
+    font-weight: bold;
+    border-bottom: 2px solid #dfc56e;
+}
+
+.input-search
+{
+    width: 250px;
+    border-radius: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    float: right;
+    border: 2px solid white;
+    color: white;
+}
+
+.search
+{
+    padding-left: 125px;
+}
+
+.foot
+{
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    color: grey;
+    padding-top: 10px;
+}
+
+.images
+{
+width: 50px;
+float: right;
+margin-right: 20px;
+}
+
+.col-3
+{
+    padding: 0;
+    background-color: darkgrey;
+    height: 300px;
+    width:300px;
+    margin-right: 22px;
+    margin-top: 40px;
+}
+
+.img
+{
+    background-image: url("../assets/sub1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img2
+{
+    background-image: url("../assets/sub2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img3
+{
+    background-image: url("../assets/sub3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img4
+{
+    background-image: url("../assets/sub4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img5
+{
+    background-image: url("../assets/sub5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img6
+{
+    background-image: url("../assets/sub6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img7
+{
+    background-image: url("../assets/sub7.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img8
+{
+    background-image: url("../assets/sub8.jpg");
+    background-size: cover;
+    background-position: center;
+}
