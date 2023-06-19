@@ -21,7 +21,7 @@
 
     <nav>
         <div class = "logo">
-            <a href = "../index.html"><img src = "../assets/My_project.png"  alt = "logo" width = "70px"></a>
+            <a href = "../index.html"><img src = "../assets/icon"  alt = "logo" width = "70px"></a>
         </div>
         
         <div class= "name">
@@ -43,57 +43,70 @@
         </div>
     </nav>
 
-    <form>
+    <form id = "subForm" onchange = "currentTotal()">
         <h4>
             Build Your Own Sub
         </h4>
 
-        <input class = "input-el" type = "text" placeholder = "Your Sub Name" required>
+        <div class="right">
+                <section class = "price">
+                    <h4>
+                        Current Price: 
+                        <div class="orderCost" id="currentTotal">R0.00
+                        </div>
+                    </h4>
+                </section>
+        </div>
+
+
+
+        <input type = "text" class = "input-el" placeholder = "Your Sub Name" id = "subName">
 
         <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="rye" value="Rye" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="rye" value="Rye" checked data-cost="5">
             <label class="form-check-label" for="standard">
               Rye Bread
             </label>
           </div>
 
           <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="ciabatta" value="Ciabatta" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="ciabatta" value="Ciabatta" checked data-cost="5">
             <label class="form-check-label" for="standard">
               Ciabatta Bread
             </label>
           </div>
 
           <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="grain" value="Grain" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="grain" value="Grain" checked data-cost="2.5">
             <label class="form-check-label" for="standard">
               Whole Grain
             </label>
           </div>
 
         <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="baguette" value="Baguette" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="baguette" value="Baguette" checked data-cost="2">
             <label class="form-check-label" for="standard">
                 Baguette
             </label>
         </div>
 
         <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="sourdough" value="Sourdough" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="sourdough" value="Sourdough" checked data-cost="2.5">
             <label class="form-check-label" for="standard">
               Sourdough
             </label>
         </div>
 
         <div class="bread-options">
-            <input class="form-check-input" type="radio" name="baseRadio" id="white" value="White" checked>
+            <input class="form-check-input" type="radio" name="baseRadio" id="white" value="White" checked data-cost="2">
             <label class="form-check-label" for="standard">
               White Bread
             </label>
         </div>
         
+        <h4>Ingredients</h4>
 
-        <select  class = "input-el">
+        <select  class = "sandwich" id = "subIngredients">
             <option>
                 Cheddar Cheese
             </option>
@@ -155,83 +168,11 @@
                 Basil
             </option>
             <option selected = "selected" required>
-                Topping Options
+                1. Ingredients
             </option>
         </select>
 
-        <select  class = "input-el">
-            <option>
-                Cheddar Cheese
-            </option>
-            <option>
-                Tomatoes
-            </option>
-            <option>
-                Ham
-            </option>
-            <option>
-                Olives
-            </option>
-            <option>
-                Lettuce
-            </option>
-            <option>
-                Avocado
-            </option>
-            <option>
-                Bacon
-            </option>
-            <option>
-                Cucumber
-            </option>
-            <option>
-                Feta
-            </option>
-            <option>
-                Gherkins
-            </option>
-            <option>
-                Onion
-            </option>
-            <option>
-                Chicken Breast
-            </option>
-            <option>
-                Egg
-            </option>
-            <option>
-                Bell Pepper
-            </option>
-            <option>
-                Jalapenos
-            </option>
-            <option>
-                Red Cabbage
-            </option>
-            <option>
-                Sun Dried Tomatoes
-            </option>
-            <option>
-                Sliced Turkey
-            </option>
-            <option>
-                Mushrooms
-            </option>
-            <option>
-                Carrots
-            </option>
-            <option>
-                Steak
-            </option>
-            <option>
-                Basil
-            </option>
-            <option selected = "selected" required>
-                Topping Options 2
-            </option>
-        </select>
-
-        <select  class = "input-el">
+        <select  class = "sandwich" id = "subIngredients2">
             <option>
                 Cheddar Cheese
             </option>
@@ -292,18 +233,12 @@
             <option>
                 Basil
             </option>
-            <option>
-                Carrots
-            </option>
-            <option>
-                Steak
-            </option>
             <option selected = "selected" required>
-                Topping Options 3
+                2. Ingredients
             </option>
         </select>
 
-        <select  class = "input-el">
+        <select  class = "sandwich" id = "subIngredients3">
             <option>
                 Cheddar Cheese
             </option>
@@ -364,18 +299,78 @@
             <option>
                 Basil
             </option>
-            <option>
-                Carrots
-            </option>
-            <option>
-                Steak
-            </option>
             <option selected = "selected" required>
-                Topping Options 4
+                3. Ingredients
             </option>
         </select>
 
-        <select  class = "input-el">
+        <select  class = "sandwich" id = "subIngredients4">
+            <option>
+                Cheddar Cheese
+            </option>
+            <option>
+                Tomatoes
+            </option>
+            <option>
+                Ham
+            </option>
+            <option>
+                Olives
+            </option>
+            <option>
+                Lettuce
+            </option>
+            <option>
+                Avocado
+            </option>
+            <option>
+                Bacon
+            </option>
+            <option>
+                Cucumber
+            </option>
+            <option>
+                Feta
+            </option>
+            <option>
+                Gherkins
+            </option>
+            <option>
+                Onion
+            </option>
+            <option>
+                Chicken Breast
+            </option>
+            <option>
+                Egg
+            </option>
+            <option>
+                Bell Pepper
+            </option>
+            <option>
+                Jalapenos
+            </option>
+            <option>
+                Red Cabbage
+            </option>
+            <option >
+                Sun Dried Tomatoes
+            </option>
+            <option>
+                Sliced Turkey
+            </option>
+            <option>
+                Mushrooms
+            </option>
+            <option>
+                Basil
+            </option>
+            <option selected = "selected" required>
+                4. Ingredients
+            </option>
+        </select>
+
+        <select  class = "input-el" id = "subIngredients5">
             <option>
                 Cheddar Cheese
             </option>
@@ -436,18 +431,12 @@
             <option>
                 Basil
             </option>
-            <option>
-                Carrots
-            </option>
-            <option>
-                Steak
-            </option>
             <option selected = "selected" required>
-                Topping Options 5
+                5. Ingredients
             </option>
         </select>
 
-        <select  class = "input-el">
+        <select  class = "input-el" id = "subSauces">
             <option>
                 Mayonnaise
             </option>
@@ -471,14 +460,26 @@
             </option>
         </select>
 
-        <button  class = "sandwich" type = "submit">Add Another Sub</button>
-        <button  class = "sandwich" type = "submit" onclick = "subSubmit()">Submit Your Sub(s)</button>
+        <button  class = "sandwich" type = "button" onclick = "makeSub(); displaySub()">Add Another Sub</button>
+        <button  class = "sandwich" type = "button" onclick = "CheckOut()">Submit Your Sub(s)</button>
     </form>
+
+    <div class = "col-7 output">
+        <h3>Sub Order Here</h3>
+        <div class = "row" id = "subOut">
+            <h5 id = "subPricing"> 
+                R0.00 
+            </h5>
+        </div>
+
+        <div id = "orders">
+        </div>
+    </div>
     
 
     <footer>
         <div class = "logo">
-           <img src = "../assets/My_project.png"  alt = "logo" width = "70px"> 
+           <img src = "../assets/icon"  alt = "logo" width = "70px"> 
         </div>
 
         <div class= "foot">

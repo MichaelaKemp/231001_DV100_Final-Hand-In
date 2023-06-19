@@ -15,14 +15,14 @@
 
     <!--Internal Documents-->
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/main.js"></script>
+    <script src="../js/check.js"></script>
 
 
 </head>
-<body>
+<body onload = "displayCheck()">
      <nav>
         <div class = "logo">
-            <a href = "../index.html"><img src = "../assets/My_project.png"  alt = "logo" width = "70px"></a>
+            <a href = "../index.html"><img src = "../assets/icon"  alt = "logo" width = "70px"></a>
         </div>
         
         <div class= "name">
@@ -49,22 +49,33 @@
             Check Out
         </h4>
 
-        <p>
+        <h6>
             Order Details:
-        </p>
+        </h6>
+        <div id = "outOrder">
+        </div>
 
-        <p>
+        <h6>
+            Order Total:
+        </h6>
+        <div id = "orderTotal" class = "h5">
+        </div>
+
+        <h6>
             Enter Your Coupon Code:
-        </p>
-        <input class = "input-el" type = "text" placeholder = "#0000">
-        
-        <button  class = "input-el" type = "submit">Check Out</button>
-    </form>
+        </h6>
+        <input class = "coupon" type = "text" placeholder = "#0000" id = "couponCode">
 
+        <button  class = "sandwich" type = "button" onclick = "discount()"> Apply Coupon</button>
+
+        
+        <button  class = "sandwich" type = "button" onclick = "resetReturn()">Check Out</button>
+
+    </form>
 
     <footer>
         <div class = "logo">
-            <img src = "../assets/My_project.png"  alt = "logo" width = "70px">
+            <img src = "../assets/icon"  alt = "logo" width = "70px">
         </div>
 
         <div class= "foot">
