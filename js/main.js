@@ -69,7 +69,7 @@ makeSub = () => {
 
     let subName = document.getElementById("subName").value
 
-    let breadOption = document.getElementsByName("baseRadio");
+    let breadOption = document.getElementsByName("baseRadio")
     let breadValue; 
     for(let i = 0; i < breadOption.length; i++){
         if(breadOption[i].checked){
